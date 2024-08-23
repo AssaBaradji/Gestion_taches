@@ -8,8 +8,6 @@ import AjouterTache from "../components/taches/AjouterTache.vue";
 import DetailsTache from "../components/taches/DetailsTache.vue";
 import ModifierTache from "../components/taches/ModifierTache.vue";
 
-
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -18,12 +16,12 @@ const router = createRouter({
       name: "ListeProjet",
       component: ListeProjet,
     },
-    { path: '/taches/add', component: AjouterTache },
+    { path: "/taches/add", component: AjouterTache },
     { path: "/projets/add", component: AjouterProjet },
-    { path: '/taches/edit/:id', component: ModifierTache, props: true },
-    { path: '/taches/:id', component: DetailsTache, props: true },
-    { path: '/projets/:id', component: ProjectDetail, props: true },
-    { path: '/projets/edit/:id', component: EditProject, props: true },
+    { path: "/taches/edit/:id", component: ModifierTache, props: true },
+    { path: "/taches/:id", component: DetailsTache, props: true },
+    { path: "/projets/:id", component: ProjectDetail, props: true },
+    { path: "/projets/edit/:id", component: EditProject, props: true },
     {
       path: "/",
       name: "taches",
@@ -31,5 +29,4 @@ const router = createRouter({
     },
   ],
 });
-
 export default router;

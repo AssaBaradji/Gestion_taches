@@ -42,21 +42,25 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-import { useGestionStore } from '../../stores/gestion';
-import { ref } from 'vue';
+import { useRouter } from "vue-router";
+import { useGestionStore } from "../../stores/gestion";
+import { ref } from "vue";
 
-    const gestion = useGestionStore();
-    const router = useRouter();
-    const nom=ref('');
-    const dateDebut= ref('');
-    const dateFin = ref('');
-    const formulaire = () => {
-        gestion.addProjet({nom: nom.value, dateDebut:dateDebut.value, dateFin:dateFin.value});
-        router.push('/projets')
+const gestion = useGestionStore();
+const router = useRouter();
+const nom = ref("");
+const dateDebut = ref("");
+const dateFin = ref("");
+const formulaire = () => {
+  gestion.addProjet({
+    nom: nom.value,
+    dateDebut: dateDebut.value,
+    dateFin: dateFin.value,
+  });
+  router.push("/projets");
 
-        nom.value = ''
-        dateDebut.value=''
-        dateFin.value = ''
-    }
+  nom.value = "";
+  dateDebut.value = "";
+  dateFin.value = "";
+};
 </script>

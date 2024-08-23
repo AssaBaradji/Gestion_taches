@@ -1,6 +1,7 @@
 <script setup>
-</script>
+import Footer from './components/Footer.vue';
 
+</script>
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
     <div class="container p-3">
@@ -24,7 +25,11 @@
       </div>
     </div>
   </nav>
-  <router-view />
+  <div> 
+    <router-view />
+    <Footer />
+  </div>
+ 
 </template>
 
 <style scoped></style>
