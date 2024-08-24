@@ -110,5 +110,5 @@ L'application utilise Vue Router pour gérer la navigation entre les différente
 Auteur
 
 ## Auteur
-- Hama Houllah Mangassouba 
-- Assa Ousman Baradji
+- Hama Houllah Mangassouba https://github.com/Mangassouba
+- Assa Ousman Baradji https://github.com/AssaBaradji
