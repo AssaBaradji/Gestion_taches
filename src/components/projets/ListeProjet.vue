@@ -22,13 +22,13 @@
           <td>{{ project.dateFin }}</td>
           <td>
             <router-link :to="'/projets/' + index" class="btn btn-info"
-              >Détails</router-link
+              ><i class="fa-solid fa-eye"></i></router-link
             >
             <router-link :to="'/projets/edit/' + index" class="btn btn-warning"
-              >Modifier</router-link
+              ><i class="fa-solid fa-pen-to-square"></i></router-link
             >
             <button @click="deleteProject(index)" class="btn btn-danger">
-              Supprimer
+              <i class="fa-solid fa-trash"></i>
             </button>
           </td>
         </tr>

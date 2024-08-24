@@ -22,13 +22,13 @@
           <td>{{ task.endDate }}</td>
           <td>
             <router-link :to="'/taches/' + index" class="btn btn-info"
-              >Détails</router-link
+              ><i class="fa-solid fa-eye"></i></router-link
             >
             <router-link :to="'/taches/edit/' + index" class="btn btn-warning"
-              >Modifier</router-link
+              ><i class="fa-solid fa-pen-to-square"></i></router-link
             >
             <button @click="deleteTask(index)" class="btn btn-danger">
-              Supprimer
+              <i class="fa-solid fa-trash"></i>
             </button>
           </td>
         </tr>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container mt-4">
     <h1>Modifier la tâche</h1>
     <form @submit.prevent="updateTask">
       <div class="mb-3">
