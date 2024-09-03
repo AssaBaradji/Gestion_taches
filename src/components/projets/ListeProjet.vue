@@ -47,4 +47,3 @@ const deleteProject = (index) => {
   projectStore.deleteProject(index);
 };
 </script>
-  
